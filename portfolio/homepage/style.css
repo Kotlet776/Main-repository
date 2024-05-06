@@ -5,6 +5,8 @@ html {
 
 body {
     font-size: 20px;
+    background-color: lightcyan;
+    min-width: 200px;
 }
 
 h1 {
@@ -15,14 +17,46 @@ img {
     width: auto;
     height: 100px;
 }
+/* Header */
 
 header {
     text-align: center;
     border-bottom: 2px solid black;
 }
 
+a {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Main */
+
 main {
     text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+    main #left-right {
+       flex-direction: column;
+    }
+
+    #projects {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #skills {
+        width: 100%;
+        border: solid 1px red;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+    #skills h3 {
+        display: none;
+    }
 }
 
 main #left-right {
@@ -37,7 +71,7 @@ main #left-right {
 #projects {
     display: flex;
     justify-content: center;
-    width: 25%;
+    margin-right: 60px;
     flex-direction: column;
 }
 
@@ -45,10 +79,17 @@ main #left-right {
 #skills {
     display: flex;
     justify-content: center;
-    width: 25%;
+    
     flex-direction: column;
 }
 
 #img {
     display: inline-flex;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
