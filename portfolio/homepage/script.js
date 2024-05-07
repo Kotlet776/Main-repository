@@ -1,7 +1,7 @@
-const element = document.querySelector("h1");
-
-function turnRed() {
-    element.style.color = "red";
-}
-
-element.onclick = "turnRed";
+document.querySelector('html').onmousedown = changeColor;   
+        
+            function changeColor() {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                return false;
+            }   

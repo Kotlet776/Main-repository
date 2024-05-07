@@ -92,4 +92,8 @@ main #left-right {
 footer {
     position: fixed;
     bottom: 0;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
